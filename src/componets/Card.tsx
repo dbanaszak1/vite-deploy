@@ -26,7 +26,7 @@ const cards = [
 
 const Card = () => {
   return (
-    <div className='w-5/6 md:w-full md:px-6 flex flex-wrap place-content-evenly '>
+    <div className='w-5/6 md:w-full 3xl:w-2/3 md:px-6 flex flex-wrap place-content-evenly '>
       <h1 className="text-3xl md:text-4xl w-full mt-10 md:px-10">Recomended travel destinations 2023</h1>
       <h2 className='text-lg text-gray-500 w-full md:px-10'>Choose the place recomended by other turists!</h2>
       {cards.map((card, index) => (
