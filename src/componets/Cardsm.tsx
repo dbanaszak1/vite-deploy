@@ -48,7 +48,7 @@ const cardssm = [
 const Cardsm = () => {
   return (      
    <>
-      <div className="w-full md:w-5/6 3xl:w-2/3 m-auto">
+      <div className="w-full md:w-5/6 3xl:w-[1400px] m-auto">
          <h1 className="w-full md:px-8 text-3xl md:text-4xl my-5">Most popular directions this year!</h1>
          <h3 className="text-lg text-gray-500 md:px-8">Find your pefect place for holidays!</h3>         
       </div>
