@@ -24,10 +24,10 @@ function App() {
       <Navbar/>
       <ScrollToTop/>
       <Routes>
-        <Route path='vite-deploy/home' Component={Home} />
-        <Route path='vite-deploy/travel' Component={TravelPage} />
-        <Route path="vite-deploy/:countryName" Component={Countrypage}/>
-        <Route path="vite-deploy/LastMinute" Component={LastMinutePage}/>
+        <Route path='/vite-deploy/home' Component={Home} />
+        <Route path='/vite-deploy/travel' Component={TravelPage} />
+        <Route path="/vite-deploy/:countryName" Component={Countrypage}/>
+        <Route path="/vite-deploy/LastMinute" Component={LastMinutePage}/>
       </Routes>
     </Router>
 
