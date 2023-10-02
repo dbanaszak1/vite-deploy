@@ -11,7 +11,7 @@ const LastMinuteBanner = () => {
         </div> 
       </div>
       <div className="w-48 m-auto py-4">
-         <Link to="../vite-deploy/LastMinute"><button  className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mb-4 rounded-lg hover:bg-gray-700 hover:text-white duration-300">CHECK OFFERS</button></Link>
+         <Link to="./vite-deploy/LastMinute"><button  className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mb-4 rounded-lg hover:bg-gray-700 hover:text-white duration-300">CHECK OFFERS</button></Link>
       </div>
     </div>
   )
