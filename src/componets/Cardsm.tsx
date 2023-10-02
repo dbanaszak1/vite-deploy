@@ -47,15 +47,15 @@ const cardssm = [
 
 const Cardsm = () => {
   return (      
-   <>
-      <div className="w-full md:w-5/6 max-w-[1400px] m-auto">
+   <section className="max-w-[1500px] m-auto">
+      <div className="w-full xl:w-5/6 m-auto">
          <h1 className="w-full md:px-8 text-3xl md:text-4xl my-5">Most popular directions this year!</h1>
          <h3 className="text-lg text-gray-500 md:px-8">Find your pefect place for holidays!</h3>         
       </div>
-      <div className="w-full md:w-5/6 max-w-[] px-10 m-auto flex flex-wrap place-content-evenly">
+      <div className="w-full xl:w-5/6 m-auto flex flex-wrap place-content-evenly">
          {cardssm.map((cardssm, index) => (
             <Link to={`../vite-deploy/${cardssm.place}`}>
-               <div key={index} style={{backgroundImage: `url(${cardssm.url})`}} className="border-[1px] border-gray-400 w-64 h-64 brightness-80 hover:brightness-110 cursor-pointer content-center my-5 rounded-lg bg-cover">
+               <div key={index} style={{backgroundImage: `url(${cardssm.url})`}} className="border-[1px] border-gray-400 w-64 h-64 brightness-80 hover:brightness-110 cursor-pointer content-center mt-4 rounded-lg bg-cover">
                   <h2 className="text-2xl text-center text-white">{cardssm.place}</h2>
                   <div className="bg-black bg-opacity-30 text-black w-full text-xl text-center items-center content-center">
                      <span className="text-white opacity-100">Best price: {cardssm.price }$</span>
@@ -64,11 +64,11 @@ const Cardsm = () => {
             </Link>
          ))}
 
-         <div className="w-full flex justify-center">
+         <div className="w-full flex justify-center pt-8">
             <button className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mb-4 rounded-lg hover:bg-gray-700 hover:text-white duration-300">Check full offer</button>  
          </div>
       </div>
-   </>
+   </section>
   );
 };
 

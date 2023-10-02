@@ -53,7 +53,7 @@ const CardLastMinute = ({lastMinute}:Props) => {
   return (
     <div className="w-full flex flex-wrap">
       {lastMinute.map((lastMinute,index)=>(
-         <div key={index} className="w-2/3 h-64 m-auto rounded-xl inline-flex my-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+         <div key={index} className="w-2/3 h-64 m-auto rounded-xl inline-flex my-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <div className="w-2/5 h-full bg-cover rounded-xl" style={{backgroundImage:`url(${lastMinute.url})`}}>
                <div className="w-28 mt-8 text-x bg-white rounded-r-xl font-semibold pl-1">LAST MINUTE</div>
             </div>

@@ -40,10 +40,10 @@ function Slider({slides}: Props) {
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
           </div>
-          <div className={currentIndex === 0 ? "w-[80px] h-[3px] rounded-xl bg-gray-600 absolute bottom-14 left-[35%]" : "w-[80px] h-[3px] rounded-xl bg-white absolute bottom-14 left-[35%]"}></div>
-          <div className={currentIndex === 1 ? "w-[80px] h-[3px] rounded-xl bg-gray-600 absolute bottom-14 left-[43%]" : "w-[80px] h-[3px] rounded-xl bg-white absolute bottom-14 left-[43%]"}></div>
-          <div className={currentIndex === 2 ? "w-[80px] h-[3px] rounded-xl bg-gray-600 absolute bottom-14 left-[51%]" : "w-[80px] h-[3px] rounded-xl bg-white absolute bottom-14 left-[51%]"}></div>
-          <div className={currentIndex === 3 ? "w-[80px] h-[3px] rounded-xl bg-gray-600 absolute bottom-14 left-[59%]" : "w-[80px] h-[3px] rounded-xl bg-white absolute bottom-14 left-[59%]"}></div>
+          <div className={currentIndex === 0 ? "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-gray-600 absolute bottom-14 left-[35%]" : "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-white absolute bottom-14 left-[35%]"}></div>
+          <div className={currentIndex === 1 ? "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-gray-600 absolute bottom-14 left-[43%]" : "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-white absolute bottom-14 left-[43%]"}></div>
+          <div className={currentIndex === 2 ? "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-gray-600 absolute bottom-14 left-[51%]" : "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-white absolute bottom-14 left-[51%]"}></div>
+          <div className={currentIndex === 3 ? "w-[20px] lg:w-[80px] h-[3px] rounded-lg bg-gray-600 absolute bottom-14 left-[59%]" : "w-[20px] xl:w-[80px] h-[3px] rounded-xl bg-white absolute bottom-14 left-[59%]"}></div>
 
         </div>
       </div>

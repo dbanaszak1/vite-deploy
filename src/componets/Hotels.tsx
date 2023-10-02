@@ -151,8 +151,8 @@ const Hotels = () => {
   const[currentFilter, setCurrentFilter]=useState(0);
 
   return (
-    <div className="mb-10">    
-      <div className="w-full md:w-5/6 3xl:w-[1300px] m-auto mt-10 p-3">    
+    <div className="mb-10 max-w-[1500px] m-auto">    
+      <div className="w-full md:w-5/6 m-auto mt-12 mb-5">    
         <div className="text-4xl px-4 mx-2">Hotels</div>
         <div className="text-xl p-4 ml-2">We have 
           <span className="text-gray-600 font-semibold"> 102466 </span> 
