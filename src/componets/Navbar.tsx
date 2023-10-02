@@ -22,13 +22,13 @@ const Navbar = () => {
 
     <ul className="space-x-4 text-gray-700 w-1/2 text-3xl place-content-center hidden lg:flex">
       <li>
-        <a href="/home" className="hover:text-gray-500">Home</a>
+        <a href="vite-deploy/home" className="hover:text-gray-500">Home</a>
       </li>
       <li>
-        <a href="/travel" className="text-2xl hover:text-gray-500">Travel</a>
+        <a href="vite-deploy/travel" className="text-2xl hover:text-gray-500">Travel</a>
       </li>
       <li>
-        <a href="/contact" className="text-xl hover:text-gray-500">Contact</a>
+        <a href="vite-deploy/contact" className="text-xl hover:text-gray-500">Contact</a>
       </li>
     </ul>    
 

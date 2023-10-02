@@ -54,7 +54,7 @@ const Cardsm = () => {
       </div>
       <div className="w-full md:w-5/6 px-10 m-auto flex flex-wrap place-content-evenly">
          {cardssm.map((cardssm, index) => (
-            <Link to={`../${cardssm.place}`}>
+            <Link to={`../vite-deploy/${cardssm.place}`}>
                <div key={index} style={{backgroundImage: `url(${cardssm.url})`}} className="border-[1px] border-gray-400 w-64 h-64 brightness-80 hover:brightness-110 cursor-pointer content-center my-5 rounded-lg bg-cover">
                   <h2 className="text-2xl text-center text-white">{cardssm.place}</h2>
                   <div className="bg-black bg-opacity-30 text-black w-full text-xl text-center items-center content-center">
