@@ -28,7 +28,7 @@ const Navbar = () => {
         <a href="/vite-deploy/travel" className="text-2xl hover:text-gray-500">Travel</a>
       </li>
       <li>
-        <a href="/vite-deploy/contact" className="text-xl hover:text-gray-500">Contact</a>
+        <a href="/vite-deploy/about" className="text-xl hover:text-gray-500">About</a>
       </li>
     </ul>    
 
@@ -42,7 +42,7 @@ const Navbar = () => {
         <a href="/vite-deploy/travel">Travel</a>
       </li>
       <li className="py-2 text-center hover:bg-gray-700 hover:text-white duration-300">
-        <a href="/vite-deploy/contact">Contact</a>
+        <a href="/vite-deploy/about">About</a>
       </li>
     </ul>   
   </div>  

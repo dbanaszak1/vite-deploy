@@ -53,11 +53,11 @@ const CardLastMinute = ({lastMinute}:Props) => {
   return (
     <div className="w-full flex flex-wrap">
       {lastMinute.map((lastMinute,index)=>(
-         <div key={index} className="w-2/3 h-64 m-auto rounded-xl inline-flex my-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-            <div className="w-2/5 h-full bg-cover rounded-xl" style={{backgroundImage:`url(${lastMinute.url})`}}>
-               <div className="w-28 mt-8 text-x bg-white rounded-r-xl font-semibold pl-1">LAST MINUTE</div>
+         <div key={index} className="w-2/3 lg:h-64 m-auto rounded-xl flex-wrap lg:inline-flex my-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+            <div className="w-full h-44 lg:w-2/5 lg:h-full bg-cover rounded-xl" style={{backgroundImage:`url(${lastMinute.url})`}}>
+               <div className="w-28 lg:mt-8 text-x bg-white rounded-r-xl font-semibold pl-1">LAST MINUTE</div>
             </div>
-            <div className="w-2/5 p-4">
+            <div className="w-full lg:w-2/5 p-4">
                <div className="w-full text-xl text-gray-700 ">{lastMinute.country}</div>
                <div className="text-2xl">{lastMinute.name}</div>
                <div className="inline-flex">{starGenerate(lastMinute.stars)}</div>
@@ -71,12 +71,12 @@ const CardLastMinute = ({lastMinute}:Props) => {
                </div>
                <div className="w-full">{lastMinute.dates}</div>
             </div>
-            <div className="w-1/5 p-4">
+            <div className="w-full lg:w-1/5 p-4">
                <div className="inline-flex">
                   <span className="text-4xl text-gray-600 pr-2">{lastMinute.price}</span>
                   <div className="text-sm w-12">$ per person</div>  
                </div>
-               <button className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mt-20 mb-4 rounded-lg hover:bg-gray-700 hover:text-white duration-300">Check offer</button>
+               <button className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold lg:mt-20 mt-2 mb-4 rounded-lg hover:bg-gray-700 hover:text-white duration-300">Check offer</button>
                <div className="text-sm inline-flex">Only {lastMinute.slots} places avilable
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"/>
