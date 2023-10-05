@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Hotels = () => { 
 
@@ -11,7 +12,11 @@ const Hotels = () => {
       ratecount: 946,
       name: "Cleopatra Hotel",
       stars: 4,
-      country:"Turkey"
+      country:"Turkey",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStF4nEnpgPVHUDfhwqTCtLnlVpxL6ZwE2cRaQg7X6lrSZIg1P8w_CbbBGC-yo6nC_qXmY&usqp=CAU",
+              "https://s.joinup.lt/uploads/hotel/41375/gallery/original/Alaiye-Kleopatra-Hotel4.jpg",
+              "https://assets.onthebeach.co.uk/m/9c29db5c317812/Small-15A%20PUZZLE%20BAR"]
     },
     {
       group: 1,
@@ -20,7 +25,9 @@ const Hotels = () => {
       country: "Greece",
       name: "Royal Palace",
       stars: 4,
-      url: "https://thetravelshots.com/wp-content/uploads/2022/06/Best-Hotels-in-Santorini.jpg"
+      url: "https://thetravelshots.com/wp-content/uploads/2022/06/Best-Hotels-in-Santorini.jpg",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 0,
@@ -29,7 +36,9 @@ const Hotels = () => {
       country: "Albania",
       name: "Atlantis hotel",
       stars: 5,
-      url: "https://thetourguy.com/wp-content/uploads/2021/12/Cavo-Tagoo.png"
+      url: "https://thetourguy.com/wp-content/uploads/2021/12/Cavo-Tagoo.png",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group:0,
@@ -38,7 +47,9 @@ const Hotels = () => {
       country: "Marocco",
       name: "Mandarin Orintal",
       stars: 4,
-      url: "https://media.timeout.com/images/105252341/750/562/image.jpg"
+      url: "https://media.timeout.com/images/105252341/750/562/image.jpg",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 2,
@@ -47,7 +58,9 @@ const Hotels = () => {
       country: "Italy",
       name: "Rome Royal",
       stars: 3,
-      url: "https://thepointsguy.global.ssl.fastly.net/us/originals/2023/02/Best-Hotel-Rome_Villa-Agrippina-a-Gran-Melia-Hotel-Pool_Facebook.jpg"
+      url: "https://thepointsguy.global.ssl.fastly.net/us/originals/2023/02/Best-Hotel-Rome_Villa-Agrippina-a-Gran-Melia-Hotel-Pool_Facebook.jpg",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 1,
@@ -56,7 +69,9 @@ const Hotels = () => {
       country: "Italy",
       name: "Rome Royal",
       stars: 5,
-      url: "https://thepointsguy.global.ssl.fastly.net/us/originals/2023/02/Best-Hotel-Rome_Villa-Agrippina-a-Gran-Melia-Hotel-Pool_Facebook.jpg"
+      url: "https://thepointsguy.global.ssl.fastly.net/us/originals/2023/02/Best-Hotel-Rome_Villa-Agrippina-a-Gran-Melia-Hotel-Pool_Facebook.jpg",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 1,
@@ -65,7 +80,9 @@ const Hotels = () => {
       country: "Turkey",
       name: "City Hills",
       stars: 4,
-      url: "https://r.cdn.redgalaxy.com/http/o2/TUI/hotels/ADB11046/S17/6568556.jpg"
+      url: "https://r.cdn.redgalaxy.com/http/o2/TUI/hotels/ADB11046/S17/6568556.jpg",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 2, 
@@ -74,7 +91,9 @@ const Hotels = () => {
       name: "Luxury Apartaments",
       stars: 5,
       url: "https://spainguides.com/wp-content/uploads/2023/09/Hotel-Puente-Romano.jpg",
-      country:"Spain"
+      country:"Spain",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 2,
@@ -83,7 +102,9 @@ const Hotels = () => {
       country: "Greece",
       name: "Palm hotel",
       stars: 4,
-      url: "https://images.r.pl/zdjecia/hotele/glob/480/creta-palm-hotel-and-apartments_grecja_kreta-chania_480_172231_438978_600x600.jpg"
+      url: "https://images.r.pl/zdjecia/hotele/glob/480/creta-palm-hotel-and-apartments_grecja_kreta-chania_480_172231_438978_600x600.jpg",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group: 2,
@@ -92,6 +113,8 @@ const Hotels = () => {
       name: "Zante Maris Suites",
       stars: 5,
       url: "https://zante-maris-suites-tsilivi.booked.com.pl/data/Photos/OriginalPhoto/8943/894392/894392953/Zante-Maris-Suites-Adults-Only-Tsilivi-Exterior.JPEG",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"],
       country: "Greece",
     },
     {
@@ -101,7 +124,9 @@ const Hotels = () => {
       country: "Egypt",
       name: "Alladin Hurgada",
       stars: 5,
-      url: "https://premium-blue-lagoon-hotel-hurghada.booked.com.pl/data/Photos/OriginalPhoto/12771/1277135/1277135320/Royal-Lagoons-Resort-Aqua-Park-Families-And-Couples-Only-Hurghada-Exterior.JPEG"
+      url: "https://premium-blue-lagoon-hotel-hurghada.booked.com.pl/data/Photos/OriginalPhoto/12771/1277135/1277135320/Royal-Lagoons-Resort-Aqua-Park-Families-And-Couples-Only-Hurghada-Exterior.JPEG",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
     {
       group:0,
@@ -110,7 +135,9 @@ const Hotels = () => {
       name: "Park Hotel",
       stars: 4,
       url: "https://assets.sunshine.co.uk/m/6c3655899181cae/Small-M20_014_00002",
-      country:"Croatia"
+      country:"Croatia",
+      slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
+              "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
      },
   ];
  
@@ -167,8 +194,10 @@ const Hotels = () => {
         <div className="w-5/6 m-auto flex flex-wrap place-content-evenly">
           {hotel.map((hotel, index) => (
             <div key={index} className = {hotel.group === currentFilter ?"h-[420px] w-[280px] border-[1px] border-gray-400 mb-6 md:mb-0 rounded-lg":"hidden"  }>
-              <div style={{backgroundImage: `url(${hotel.url})`}} className="h-[200px]  brightness-80 hover:brightness-110 cursor-pointer rounded-t-md content-center bg-cover">
-              </div>
+              <Link key={index} to={`../vite-deploy/Hotel/${hotel.name}`} state={{hotel: hotel}}>
+                <div style={{backgroundImage: `url(${hotel.url})`}} className="h-[200px]  brightness-80 hover:brightness-110 cursor-pointer rounded-t-md content-center bg-cover">
+                </div>              
+              </Link>
               <div className="w-full p-4">
                 <div className="text-sm text-gray-600">{hotel.country}</div>
                 <div className="text-xl">{hotel.name}</div>
