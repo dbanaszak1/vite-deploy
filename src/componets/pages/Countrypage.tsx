@@ -222,6 +222,161 @@ const travelNotes = [
        }
      ],
    },
+   {
+    country: "Thailand",
+    description: "Thailand is a tropical paradise known for its stunning beaches, rich cultural heritage, and delicious street food. It's a popular destination for tourists from around the world.",
+    imageUrl: "https://cdn.content.tuigroup.com/adamtui/2019_8/30_14/49f61811-d13d-44e6-9977-aab900ee376a/ACC_990246_shutterstock_1014644104WebOriginalCompressed.jpg",
+    hotels: [
+      {
+        rate: 8.9,
+        ratecount: 145,
+        name: "Bangkok Grand Palace Hotel",
+        stars: 4,
+        url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/227559937.jpg?k=8f4a1e588fa48954caa1b3c0f113c76a8cc3ec7361b43e117fee08a7710faf15&o=&hp=1",
+        price: "320"
+      },
+      {
+        rate: 7.5,
+        ratecount: 212,
+        name: "Krabi Beachfront Resort",
+        stars: 4,
+        url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/37/c5/e7/swimming-pool-5.jpg?w=1200&h=-1&s=1",
+        price: "450"
+      },
+      {
+        rate: 9.6,
+        ratecount: 68,
+        name: "Phuket Luxury Villas",
+        stars: 5,
+        url: "https://www.holidify.com/images/cmsuploads/compressed/244353400_20220223171427.jpg",
+        price: "1500"
+      }
+    ]
+  },
+  {
+    country: "Venezuela",
+    description: "Venezuela is a South American country known for its diverse landscapes, including the Andes Mountains and beautiful beaches. It offers a mix of cultural heritage and natural beauty.",
+    imageUrl: "https://i.natgeofe.com/n/95cea01e-76ae-460e-80c7-308cd7de46b9/MM8844_210221_052439.jpg?w=2520&h=1678",
+    hotels: [
+      {
+        rate: 8.5,
+        ratecount: 98,
+        name: "Caracas Plaza Hotel",
+        stars: 4,
+        url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/8f/e4/3b/hesperia-isla-margarita.jpg?w=1200&h=-1&s=1",
+        price: "280"
+      },
+      {
+        rate: 7.2,
+        ratecount: 152,
+        name: "Angel Falls Lodge",
+        stars: 3,
+        url: "https://media-cdn.tripadvisor.com/media/photo-s/0b/75/d4/42/piscina-atardecer.jpg",
+        price: "350"
+      },
+      {
+        rate: 9.0,
+        ratecount: 45,
+        name: "Margarita Island Resort",
+        stars: 5,
+        url: "https://www.traveltourxp.com/wp-content/uploads/2016/12/Luxury-Hotels-In-Venezuela.jpg",
+        price: "1200"
+      }
+    ]
+  },
+  {
+    country: "Kenya",
+    description: "Kenya is an East African country known for its diverse wildlife, including the 'Big Five.' It offers breathtaking savannahs, national parks, and rich cultural experiences.",
+    imageUrl: "https://s3-cdn.designerjourneys.com/blog/wp-content/uploads/2021/06/23092300/damian-patkowski-T-LfvX-7IVg-unsplash-scaled.jpg",
+    hotels: [
+      {
+        rate: 9.1,
+        ratecount: 120,
+        name: "Nairobi Safari Lodge",
+        stars: 4,
+        url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/411394626.jpg?k=947438beb69caf0b30b2f81e2d5503bf94820322f77e569fd566932284e54133&o=&hp=1",
+        price: "350"
+      },
+      {
+        rate: 7.8,
+        ratecount: 85,
+        name: "Mombasa Beach Resort",
+        stars: 4,
+        url: "https://yellowzebrasafaris.com/media/16982/at-night-03.jpg",
+        price: "450"
+      },
+      {
+        rate: 9.5,
+        ratecount: 60,
+        name: "Maasai Mara Luxury Camp",
+        stars: 5,
+        url: "https://static.wixstatic.com/media/d51816_5e3843995ccb43cfb8e92603b812bb3e~mv2.jpg/v1/fill/w_560,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d51816_5e3843995ccb43cfb8e92603b812bb3e~mv2.jpg",
+        price: "1500"
+      }
+    ]
+  },
+  {
+    country: "Dominica",
+    description: "Dominica is a Caribbean island nation known for its lush rainforests, volcanic landscapes, and natural hot springs. It's a paradise for nature enthusiasts.",
+    imageUrl: "https://media.cntraveler.com/photos/63d93883ff7e4ac51f2db422/16:9/w_2560%2Cc_limit/Secret%2520Bay_Aerial%2520View%2520of%2520Secret%2520Bay.jpg",
+    hotels: [
+      {
+        rate: 8.7,
+        ratecount: 68,
+        name: "Roseau Rainforest Lodge",
+        stars: 4,
+        url: "https://www.telegraph.co.uk/content/dam/Travel/Destinations/Caribbean/cabrits-hotel-dominica-p.jpg",
+        price: "320"
+      },
+      {
+        rate: 7.4,
+        ratecount: 105,
+        name: "Calibishie Cove Resort",
+        stars: 3,
+        url: "https://d36tnp772eyphs.cloudfront.net/blogs/1/2020/01/LAUCHERT_MOE191120_9-Dominica-stays-940x528.jpg",
+        price: "250"
+      },
+      {
+        rate: 9.2,
+        ratecount: 42,
+        name: "Trafalgar Falls Inn",
+        stars: 4,
+        url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/d0/7b/58/fort-young-hotel.jpg?w=1200&h=-1&s=1",
+        price: "580"
+      }
+    ]
+  },
+  {
+    country: "Zanzibar",
+    description: "Zanzibar is an Indian Ocean paradise known for its white sandy beaches, historic Stone Town, and vibrant marine life. It's a haven for beach lovers and divers.",
+    imageUrl: "https://cdn-images.go2africa.com/wp-content/uploads/2022/02/09150009/Blog-Zanzibar-Coastline-2.jpg",
+    hotels: [
+      {
+        rate: 8.9,
+        ratecount: 95,
+        name: "Zanzibar Beach Resort",
+        stars: 4,
+        url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/8e/8a/24/beautiful.jpg?w=700&h=-1&s=1",
+        price: "450"
+      },
+      {
+        rate: 7.6,
+        ratecount: 120,
+        name: "Stone Town Boutique Hotel",
+        stars: 3,
+        url: "https://q-xx.bstatic.com/xdata/images/hotel/max500/125222703.jpg?k=441b28970bd4437ad4754894ea01a91116141c5d5dac5778901af89de523b057&o=&isSkia=true",
+        price: "320"
+      },
+      {
+        rate: 9.4,
+        ratecount: 55,
+        name: "Pemba Island Retreat",
+        stars: 5,
+        url: "https://q-xx.bstatic.com/xdata/images/hotel/840x460/125217700.jpg?k=cbf3d61df9e46437cd773af93870d351fc275279c5473f84a361cb73e8e300e3&o=&isSkia=true",
+        price: "1400"
+      }
+    ]
+  },
 ];
 
 
@@ -231,19 +386,14 @@ let {countryName} = useParams();
 const name = countryName || 'else';
 
 const idxChecker = (name:string) => {
-  if(name=="Croatia") return(0);
-  if(name=="Egypt") return(1);
-  if(name=="Turkey") return(2);
-  if(name=="Greece") return(3);
-  if(name=="Italy") return(4);
-  if(name=="Albania") return(5);
-  if(name=="Marocco") return(6);
-  if(name=="Spain") return(7);
-  else{
-    return(404)
+  let index=0;
+  for (let i of travelNotes ){
+    if(name===i.country){return index}
+  index++; 
   }
+  return(404)
 }
-var idx=idxChecker(name)
+var idx=idxChecker(name);
 
 if(idx!=404){
   return (

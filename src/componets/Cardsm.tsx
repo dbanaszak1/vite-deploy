@@ -63,10 +63,6 @@ const Cardsm = () => {
                </div>
             </Link>
          ))}
-
-         <div className="w-full flex justify-center pt-8">
-            <button className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mb-4 rounded-lg hover:bg-gray-700 hover:text-white duration-300">Check full offer</button>  
-         </div>
       </div>
    </section>
   );

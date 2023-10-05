@@ -2,7 +2,7 @@ import React from 'react'
 
 const TravelPage = () => {
   return (
-    <div>TRavelPage</div>
+    <div>Nic tu jeszcze nie ma</div>
   )
 }
 
