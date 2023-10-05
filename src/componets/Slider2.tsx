@@ -22,23 +22,26 @@ const Slider2 = ({slider}:Props) => {
   };
 
   return (
-    <div className="max-w-sm md:max-w-lg lg:max-w-[930px] h-[500px] relative">
+    <div className="max-w-sm md:max-w-lg lg:max-w-[930px]">
         <div style={{ backgroundImage: `url(${slider[currentIndex]})` }}
-          className="h-full w-full bg-center bg-cover duration-500 rounded-2xl m-2">
-            <div className="text-white text-4xl absolute top-[50%] right-[95%] translate-x-[10px] bg-black/20 rounded-full cursor-pointer"
+          className="relative h-[500px] w-full bg-center bg-cover duration-500 rounded-2xl m-2">
+            <div className="text-white text-4xl absolute top-[50%] right-[95%] translate-x-[10px] bg-black/50 rounded-full cursor-pointer"
             onClick={() => prev()}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
               </svg>
             </div>
-            <div className="text-white text-4xl absolute top-[50%] left-[95%] -translate-x-[10px] bg-black/20 rounded-full cursor-pointer" onClick={() => next()}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+            <div className="text-white text-4xl absolute top-[50%] left-[95%] -translate-x-[10px] bg-black/50 rounded-full cursor-pointer" onClick={() => next()}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </div>
+            <div className='bg-white text-gray-600 opacity-80 w-10 h-10 rounded-xl flex items-center justify-center absolute bottom-[5%] left-[3%]'>
+              {currentIndex+1}/{slider.length}
+            </div>
         </div>
         <div className='inline-flex'>
-          {slider.map((slides,index)=>(
+          {slider.map((slides,index)=>index<4 && (
             <div key={index} style={{ backgroundImage: `url(${slider[index]})`}} className='w-44 h-24 bg-cover rounded-2xl m-2'>
             </div>
           ))}

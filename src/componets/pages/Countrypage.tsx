@@ -230,7 +230,7 @@ const travelNotes = [
       {
         rate: 8.9,
         ratecount: 145,
-        name: "Bangkok Grand Palace Hotel",
+        name: "Bangkok Grand Palace",
         stars: 4,
         url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/227559937.jpg?k=8f4a1e588fa48954caa1b3c0f113c76a8cc3ec7361b43e117fee08a7710faf15&o=&hp=1",
         price: "320"
@@ -308,7 +308,7 @@ const travelNotes = [
       {
         rate: 9.5,
         ratecount: 60,
-        name: "Maasai Mara Luxury Camp",
+        name: "Maasai Mara Luxury",
         stars: 5,
         url: "https://static.wixstatic.com/media/d51816_5e3843995ccb43cfb8e92603b812bb3e~mv2.jpg/v1/fill/w_560,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d51816_5e3843995ccb43cfb8e92603b812bb3e~mv2.jpg",
         price: "1500"
@@ -362,7 +362,7 @@ const travelNotes = [
       {
         rate: 7.6,
         ratecount: 120,
-        name: "Stone Town Boutique Hotel",
+        name: "Stone Town Hotel",
         stars: 3,
         url: "https://q-xx.bstatic.com/xdata/images/hotel/max500/125222703.jpg?k=441b28970bd4437ad4754894ea01a91116141c5d5dac5778901af89de523b057&o=&isSkia=true",
         price: "320"

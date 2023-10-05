@@ -26,7 +26,7 @@ const cards = [
 
 const Card = () => {
   return (
-    <div className='w-full max-w-[1500px] md:w-5/6 md:px-6'>
+    <div className='w-full max-w-[1500px] md:w-5/6 '>
       <h1 className="text-3xl md:text-4xl w-full m-auto md:px-12 mt-10">Recomended travel destinations 2023</h1>
       <h2 className='text-lg text-gray-500 w-full m-auto md:px-12'>Choose the place recomended by other turists!</h2>
       <div className=' flex flex-wrap place-content-evenly w-full m-auto '>
