@@ -12,6 +12,7 @@ const HotelOffer = () => {
   const [selectedArrTime, setSelectedArrTime]=useState("Select time")
   const [selectedListActive, setSelectedListActive]=useState(false)
   const [selectedList, setSelectedList]=useState(0)
+  const [selectedRoom, setSelectedRoom]=useState(-1)
 
     
 const location = useLocation()
@@ -93,7 +94,7 @@ const isActive = (listNumber:number) => {
   return (
   <>
 
-  {/*SLIDER & INFO*/}
+{/*SLIDER & INFO*/}
     <div className='w-5/6 m-auto mt-10 mb-8 flex flex-wrap'>
       <div className='mx-2 lg:hidden'>
         <div className="text-4xl font-italic mb-2 w-full ">{hotel.name}</div>
@@ -141,6 +142,10 @@ const isActive = (listNumber:number) => {
                     <span>2 </span>
                     <svg className="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="5" r="2" />  <path d="M10 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /></svg>
                     <span className='text-xl text-gray-500 font-normal'>- Room for 2 people</span>
+                    <button onClick={()=>setSelectedRoom(0)}
+                            className={selectedRoom===0 ? "text-xl rounded-full px-2 border-2 border-blue-500":"text-xl rounded-full px-2 border-2 border-gray-300"}>
+                            Select room
+                    </button>  
                   </div>
                 </div>
               </div>
@@ -156,6 +161,10 @@ const isActive = (listNumber:number) => {
                     <span>4 </span>
                     <svg className="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="5" r="2" />  <path d="M10 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /></svg>
                     <span className='text-xl text-gray-500 font-normal'>- Room for 4 people</span>
+                    <button onClick={()=>setSelectedRoom(1)}
+                            className={selectedRoom===1 ? "text-xl rounded-full px-2 border-2 border-blue-500":"text-xl rounded-full px-2 border-2 border-gray-300"}>
+                            Select room
+                    </button>  
                   </div>
                 </div>
               </div>
@@ -171,6 +180,10 @@ const isActive = (listNumber:number) => {
                     <span>1 </span>
                     <svg className="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="5" r="2" />  <path d="M10 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /></svg>
                     <span className='text-xl text-gray-500 font-normal'>- Room for 1 person</span>
+                    <button onClick={()=>setSelectedRoom(2)}
+                            className={selectedRoom===2 ? "text-xl rounded-full px-2 border-2 border-blue-500":" text-xl rounded-full px-2 border-2 border-gray-300"}>
+                            Select room
+                    </button>  
                   </div>
                 </div>
               </div>
