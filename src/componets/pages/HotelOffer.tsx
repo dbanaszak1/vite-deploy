@@ -30,6 +30,8 @@ const rateHotel =(rate: number)=>{
   return(<span>Poor</span>)
 };
 
+const hotelUrl = "https://www.cvent.com/sites/default/files/styles/focus_scale_and_crop_800x450/public/image/2021-10/hotel%20room%20with%20beachfront%20view.jpg?h=662a4f7c&itok=7Laa3LkQ"
+
 const flights=[
   {
     city: "Warszawa",
@@ -66,18 +68,33 @@ const idxChecker = (selectedCity:string) => {
 const changeSelectedDeparture = (city: string)=> {
   setSelectedDeparture(city)
   setSelectedDepTime("Select departure time")
+  setSelectedListActive(!selectedListActive)
 }
 const changeSelectedArrival = (city: string)=> {
   setSelectedArrival(city)
   setSelectedArrTime("Select arrival time")
+  setSelectedListActive(!selectedListActive)
 }
 
-const isActive = () => {
-  
+const changeSelectedDepTime = (time:string) => {
+  setSelectedDepTime(time)
+  setSelectedListActive(!selectedListActive)
+}
+
+const changeSelectedArrTime = (time:string) => {
+  setSelectedArrTime(time)
+  setSelectedListActive(!selectedListActive)
+}
+
+const isActive = (listNumber:number) => {
+  setSelectedList(listNumber);
+  setSelectedListActive(!selectedListActive)
 }
   return (
   <>
-    <div className='w-5/6 m-auto mt-10 flex flex-wrap'>
+
+  {/*SLIDER & INFO*/}
+    <div className='w-5/6 m-auto mt-10 mb-8 flex flex-wrap'>
       <div className='mx-2 lg:hidden'>
         <div className="text-4xl font-italic mb-2 w-full ">{hotel.name}</div>
         <div className="text-3xl text-gray-500 mb-2 w-full ">{hotel.country}</div>
@@ -108,62 +125,134 @@ const isActive = () => {
       </div>  
     </div>
     <div className='w-5/6 m-auto'>
-        <div className='flex-row'>
+
+{/*ROOM OPTIONS*/}
+        <div className='w-full border-t-2 border-gray-300 mb-8'>
+          <div className='text-3xl pt-8 pb-2'>Room options:</div>
+          <div className='w-full'>
+              <div className='lg:inline-flex rounded-2xl w-full border-2 my-4 border-gray-500'>
+                <div className='w-full lg:w-1/3 h-48 rounded-t-2xl lg:rounded-l-2xl bg-cover' style={{backgroundImage: `url(${hotelUrl})`}}></div>
+                <div className='lg:w-1/3 py-2 px-5 border-b-2 lg:border-x-2 border-gray-300'>
+                  <div className='w-full text-xl'>Room code: <span className='text-gray-500'>2XFS4</span></div>
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, adipisci. Beatae vitae voluptate a ipsa nisi provident corrupti consequatur molestias</span>
+                </div>
+                <div className='px-5 py-2 lg:w-1/3'>
+                  <div className='inline-flex text-3xl font-semibold'>
+                    <span>2 </span>
+                    <svg className="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="5" r="2" />  <path d="M10 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /></svg>
+                    <span className='text-xl text-gray-500 font-normal'>- Room for 2 people</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='lg:inline-flex rounded-2xl w-full border-2 my-4 border-gray-500'>
+                <div className='w-full lg:w-1/3 h-48 rounded-t-2xl lg:rounded-l-2xl bg-cover' style={{backgroundImage: `url(https://www.italianbark.com/wp-content/uploads/2018/01/hotel-room-design-trends-italianbark-interior-design-blog.jpg)`}}></div>
+                <div className='lg:w-1/3 py-2 px-5 border-b-2 lg:border-x-2 border-gray-300'>
+                  <div className='w-full text-xl'>Room code: <span className='text-gray-500'>4FHG9</span></div>
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, adipisci. Beatae vitae voluptate a ipsa nisi provident corrupti consequatur molestias</span>
+                </div>
+                <div className='px-5 py-2 lg:w-1/3'>
+                  <div className='inline-flex text-3xl font-semibold'>
+                    <span>4 </span>
+                    <svg className="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="5" r="2" />  <path d="M10 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /></svg>
+                    <span className='text-xl text-gray-500 font-normal'>- Room for 4 people</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='lg:inline-flex rounded-2xl w-full border-2 my-4 border-gray-500'>
+                <div className='w-full lg:w-1/3 h-48 rounded-t-2xl lg:rounded-l-2xl bg-cover' style={{backgroundImage: `url(https://webbox.imgix.net/images/owvecfmxulwbfvxm/c56a0c0d-8454-431a-9b3e-f420c72e82e3.jpg)`}}></div>
+                <div className='lg:w-1/3 py-2 px-5 border-b-2 lg:border-x-2 border-gray-300'>
+                  <div className='w-full text-xl'>Room code: <span className='text-gray-500'>1XFH7</span></div>
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, adipisci. Beatae vitae voluptate a ipsa nisi provident corrupti consequatur molestias</span>
+                </div>
+                <div className='px-5 py-2 lg:w-1/3'>
+                  <div className='inline-flex text-3xl font-semibold'>
+                    <span>1 </span>
+                    <svg className="h-8 w-8 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="5" r="2" />  <path d="M10 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /></svg>
+                    <span className='text-xl text-gray-500 font-normal'>- Room for 1 person</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+{/*FLIGHT OPTIONS*/}
+        <div className='flex-row border-t-2 border-gray-300'>
           <div className='text-3xl pt-8 pb-2'>Flight options:</div>
-          <div className='inline-flex items-center h-10'>
-            <svg className="h-10 w-10 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 12h5a2 2 0 0 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3z" transform="rotate(-15 12 12) translate(0 -1)" />  <line x1="3" y1="21" x2="21" y2="21" /></svg>  
-            <span className='px-4 text-2xl'>Departure:</span>
-            <li className='group px-4 text-2xl list-none cursor-pointer relative'>
-              <div className='inline-flex'>
-                <span onClick={()=>isActive()}>{selectedDeparture}</span>
+          <div className='lg:inline-flex items-center lg:h-10'>
+            <div className='inline-flex'>
+              <svg className="h-10 w-10 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 12h5a2 2 0 0 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3z" transform="rotate(-15 12 12) translate(0 -1)" />  <line x1="3" y1="21" x2="21" y2="21" /></svg>  
+              <span className='px-4 text-2xl'>Departure:</span>              
+            </div>
+            <li className='px-4 my-2 lg:my-0 text-2xl list-none cursor-pointer relative z-40 bg-blue-200 rounded-2xl mx-1'>
+              <div onClick={()=>isActive(1)} className='inline-flex'>
+                <span >{selectedDeparture}</span>
                 <svg className="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
               </div>
               <div className='absolute w-40'>
                 {flights.map((options,index)=>(
-                    <ul key={index} onClick={()=>(changeSelectedDeparture(options.city))}  className='hidden group-hover:block text-xl static'>
+                    <ul key={index} onClick={()=>(changeSelectedDeparture(options.city))}  
+                        className={(selectedList===1 && selectedListActive===true) ? 'text-xl bg-blue-200 w-36 px-2 hover:bg-blue-100':"hidden"}>
                       {options.city}
                     </ul>
                 ))}
               </div>
             </li>            
-            <li className='group px-4 text-2xl list-none cursor-pointer relative'>
-              <div className='inline-flex'>
-                {selectedDepTime}
+            <li className='px-4 text-2xl list-none cursor-pointer relative z-30 mx-1 bg-blue-200 rounded-2xl'>
+              <div onClick={()=>isActive(2)} className='inline-flex'>
+              <span>{selectedDepTime}</span>
                 <svg className="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
               </div>
               <div className='absolute w-40'>
                 {flights[idxChecker(selectedDeparture)].deptime.map((time,index)=>(
-                    <ul key={index} onClick={()=>setSelectedDepTime(time)}  className='hidden group-hover:block text-xl static'>
+                    <ul key={index} onClick={()=>changeSelectedDepTime(time)}
+                        className={(selectedList===2 && selectedListActive===true) ? 'text-xl bg-blue-200 w-16 px-2 hover:bg-blue-100':"hidden"}>
                       {time}
                     </ul>
                 ))}
               </div>
             </li>
           </div>
+
           <div className='inline-flex items-center w-full'>
-            <svg className="h-10 w-10 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 12h5a2 2 0 0 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3z" transform="rotate(15 12 12) translate(0 -1)" />  <line x1="3" y1="21" x2="21" y2="21" /></svg>  
-            <span className='px-4 text-2xl'>Arrival:</span>
-            <li className='group px-4 text-2xl list-none cursor-pointer relative'>
-              <div className='inline-flex'>
-                {selectedArrival}
+            <svg className="h-10 w-10 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <div className='px-4 text-2xl py-2 inline-flex'>
+              <span>Time of visit:</span>
+              <div className='bg-blue-200 rounded-2xl px-4 mx-2'> 7 Days</div>
+            </div>
+          </div>   
+
+          <div className='lg:inline-flex  items-center w-full'>
+            <div className='inline-flex'>
+              <svg className="h-10 w-10 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 12h5a2 2 0 0 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3z" transform="rotate(15 12 12) translate(0 -1)" />  <line x1="3" y1="21" x2="21" y2="21" /></svg>  
+              <span className='px-4 text-2xl'>Arrival:</span>              
+            </div>
+            <li className='px-4 my-2 lg:my-0 text-2xl list-none cursor-pointer relative z-20 mx-1 bg-blue-200 rounded-2xl'>
+              <div onClick={()=>isActive(3)} className='inline-flex'>
+                <span>{selectedArrival}</span>
                 <svg className="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
               </div>
               <div className='absolute w-40'>
                 {flights.map((options,index)=>(
-                    <ul key={index} onClick={()=>(changeSelectedArrival(options.city))}  className='hidden group-hover:block text-xl static'>
+                    <ul key={index} onClick={()=>(changeSelectedArrival(options.city))}
+                        className={(selectedList===3 && selectedListActive===true) ? 'text-xl w-36 px-2 bg-blue-200 hover:bg-blue-100':"hidden"}>
                       {options.city}
                     </ul>
                 ))}
               </div>
             </li>            
-            <li className='group px-4 text-2xl list-none cursor-pointer relative'>
-              <div className='inline-flex'>
+            <li className='px-4 text-2xl list-none cursor-pointer relative z-10 mx-1 bg-blue-200 rounded-2xl'>
+              <div onClick={()=>isActive(4)} className='inline-flex'>
                 {selectedArrTime}
                 <svg className="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
               </div>
               <div className='absolute w-40'>
                 {flights[idxChecker(selectedDeparture)].arrtime.map((time,index)=>(
-                    <ul key={index} onClick={()=>setSelectedArrTime(time)}  className='hidden group-hover:block text-xl static'>
+                    <ul key={index} onClick={()=>changeSelectedArrTime(time)}
+                        className={(selectedList===4 && selectedListActive===true) ? 'text-xl bg-blue-200 w-16 px-2 hover:bg-blue-100':"hidden"}>
                       {time}
                     </ul>
                 ))}
