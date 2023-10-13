@@ -30,14 +30,10 @@ const Home = () => {
 
   
   return (
-   <div style={{backgroundImage: `url(${bgurl})`}} className="w-full h-full  bg-no-repeat" id="bgFull">
-   <div className="flex flex-wrap place-content-evenly w-5/6 m-auto">
-     <Card/>
-   </div>
-   <LastMinuteBanner/> 
-   <div className="p-10 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-     <Cardsm/>
-   </div>   
+   <div style={{backgroundImage: `url(${bgurl})`}} className="w-full h-full bg-no-repeat">
+   <Cardsm/>
+   <LastMinuteBanner/>
+   <Card/>
    <Hotels/>  
    <Exotic/>
    <Slider slides={slides}/>

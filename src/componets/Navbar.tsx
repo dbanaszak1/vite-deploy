@@ -33,7 +33,7 @@ const Navbar = () => {
     </ul>    
 
   </nav>
-  <div className={false === currentState ? "hidden" : "flex text-3xl w-full sticky top-20 border-b-2 border-black z-10"}>
+  <div className={false === currentState ? "hidden" : "flex text-3xl w-full sticky top-20 border-b-2 border-black z-50"}>
     <ul className="bg-white w-full flex-row text-center">
       <li className='w-full text-center py-2 hover:bg-gray-700 hover:text-white duration-300'>
         <a href="/vite-deploy/home">Home</a>

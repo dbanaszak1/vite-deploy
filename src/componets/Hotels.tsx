@@ -13,6 +13,7 @@ const Hotels = () => {
       ratecount: 946,
       name: "Cleopatra Hotel",
       stars: 4,
+      price: 300,
       country:"Turkey",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStF4nEnpgPVHUDfhwqTCtLnlVpxL6ZwE2cRaQg7X6lrSZIg1P8w_CbbBGC-yo6nC_qXmY&usqp=CAU",
@@ -26,6 +27,7 @@ const Hotels = () => {
       country: "Greece",
       name: "Royal Palace",
       stars: 4,
+      price: 300,
       url: "https://thetravelshots.com/wp-content/uploads/2022/06/Best-Hotels-in-Santorini.jpg",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
@@ -41,6 +43,7 @@ const Hotels = () => {
       country: "Albania",
       name: "Atlantis hotel",
       stars: 5,
+      price: 300,
       url: "https://thetourguy.com/wp-content/uploads/2021/12/Cavo-Tagoo.png",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
@@ -52,6 +55,7 @@ const Hotels = () => {
       country: "Marocco",
       name: "Mandarin Orintal",
       stars: 4,
+      price: 300,
       url: "https://media.timeout.com/images/105252341/750/562/image.jpg",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
@@ -63,6 +67,7 @@ const Hotels = () => {
       country: "Italy",
       name: "Rome Royal",
       stars: 3,
+      price: 300,
       url: "https://thepointsguy.global.ssl.fastly.net/us/originals/2023/02/Best-Hotel-Rome_Villa-Agrippina-a-Gran-Melia-Hotel-Pool_Facebook.jpg",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
@@ -74,6 +79,7 @@ const Hotels = () => {
       country: "Italy",
       name: "Rome Royal",
       stars: 5,
+      price: 300,
       url: "https://thepointsguy.global.ssl.fastly.net/us/originals/2023/02/Best-Hotel-Rome_Villa-Agrippina-a-Gran-Melia-Hotel-Pool_Facebook.jpg",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
@@ -85,6 +91,7 @@ const Hotels = () => {
       country: "Turkey",
       name: "City Hills",
       stars: 4,
+      price: 300,
       url: "https://r.cdn.redgalaxy.com/http/o2/TUI/hotels/ADB11046/S17/6568556.jpg",
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
@@ -97,6 +104,7 @@ const Hotels = () => {
       stars: 5,
       url: "https://spainguides.com/wp-content/uploads/2023/09/Hotel-Puente-Romano.jpg",
       country:"Spain",
+      price: 300,
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
     },
@@ -105,6 +113,7 @@ const Hotels = () => {
       rate: 8.8,
       ratecount: 356,
       country: "Greece",
+      price: 300,
       name: "Palm hotel",
       stars: 4,
       url: "https://images.r.pl/zdjecia/hotele/glob/480/creta-palm-hotel-and-apartments_grecja_kreta-chania_480_172231_438978_600x600.jpg",
@@ -121,12 +130,14 @@ const Hotels = () => {
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"],
       country: "Greece",
+      price: 300,
     },
     {
       group: 1,
       rate: 9.4,
       ratecount: 756,
       country: "Egypt",
+      price: 300,
       name: "Alladin Hurgada",
       stars: 5,
       url: "https://premium-blue-lagoon-hotel-hurghada.booked.com.pl/data/Photos/OriginalPhoto/12771/1277135/1277135320/Royal-Lagoons-Resort-Aqua-Park-Families-And-Couples-Only-Hurghada-Exterior.JPEG",
@@ -141,6 +152,7 @@ const Hotels = () => {
       stars: 4,
       url: "https://assets.sunshine.co.uk/m/6c3655899181cae/Small-M20_014_00002",
       country:"Croatia",
+      price: 300,
       slides:["https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg",
               "https://i.wakacje.pl/no-index/hotel/turcja/alaiye-kleopatra-1067449786-original.jpg"]
      },
@@ -162,8 +174,8 @@ const Hotels = () => {
   const[currentFilter, setCurrentFilter]=useState(0);
 
   return (
-    <div className="mb-10 max-w-[1500px] m-auto">    
-      <div className="w-full md:w-5/6 m-auto mt-12 mb-5">    
+    <div className="mb-10 max-w-[1280px] m-auto border-t-2 border-gray-200">    
+      <div className="w-full m-auto mt-12 mb-5">    
         <div className="text-4xl px-4 mx-2">Hotels</div>
         <div className="text-xl p-4 ml-2">We have 
           <span className="text-gray-600 font-semibold"> 102466 </span> 
@@ -175,7 +187,7 @@ const Hotels = () => {
           <button id="button3" onClick={()=>setCurrentFilter(2)} className={2 === currentFilter ? "p-2 m-1 md:m-4 rounded-full border-[1px] border-blue-600" :"p-2 m-1 md:m-4 rounded-full border-[1px] border-gray-400 hover:border-blue-600" }>For peace lovers</button>          
         </div>
       </div>
-        <div className="w-5/6 m-auto flex flex-wrap place-content-evenly">
+        <div className=" m-auto flex flex-wrap place-content-evenly">
           {hotel.map((hotel, index) => (
             <div key={index} className = {hotel.group === currentFilter ?"h-[420px] w-[280px] border-[1px] border-gray-400 mb-6 md:mb-0 rounded-lg":"hidden"  }>
               <Link key={index} to={`../vite-deploy/Hotel/${hotel.name}`} state={{hotel: hotel}}>

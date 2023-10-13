@@ -26,12 +26,14 @@ const cards = [
 
 const Card = () => {
   return (
-    <div className='w-full max-w-[1500px] md:w-5/6 '>
-      <h1 className="text-3xl md:text-4xl w-full m-auto md:px-12 mt-10">Recomended travel destinations 2023</h1>
-      <h2 className='text-lg text-gray-500 w-full m-auto md:px-12'>Choose the place recomended by other turists!</h2>
+    <div className='w-5/6 md:w-full max-w-[1280px] m-auto mt-12 mb-12'>
+      <div className="w-full m-auto">
+         <h1 className="text-3xl md:text-4xl">Recomended travel destinations 2023</h1>
+         <h2 className='text-lg text-gray-500'>Choose the place recomended by other turists!</h2>
+      </div>
       <div className=' flex flex-wrap place-content-evenly w-full m-auto '>
          {cards.map((card, index) => (
-         <div key={index} className="w-[520px] rounded-lg bg-white pt-2 my-4 border-2 border-gray-400">
+         <div key={index} className="w-[600px] rounded-lg bg-white pt-2 my-4 border-2 border-gray-400">
                <div className="flex-row text-gray-700 ">
                   <div className='inline-flex w-full py-3 px-5'>
                      <svg className="hover:rotate-180 duration-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -50,7 +52,7 @@ const Card = () => {
                      <span className="mx-4 text-lg md:text-2xl group-hover:translate-x-10 duration-300"> Buy your ticket!</span>               
                   </div>
                </div>
-            <img src={card.url} className="w-[520px] h-[180px] sm:h-[310px] rounded-b-lg brightness-80 hover:brightness-110 cursor-pointer shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"></img>
+            <img src={card.url} className="w-full h-[180px] sm:h-[310px] rounded-b-lg brightness-80 hover:brightness-110 cursor-pointer shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"></img>
          </div>
          ))}   
       </div>
