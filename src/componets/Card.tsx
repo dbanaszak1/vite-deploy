@@ -33,7 +33,8 @@ const Card = () => {
       </div>
       <div className=' flex flex-wrap place-content-evenly w-full m-auto '>
          {cards.map((card, index) => (
-         <div key={index} className="w-[600px] rounded-lg bg-white pt-2 my-4 border-2 border-gray-400">
+         <div key={index} className="w-[600px] rounded-lg bg-white  my-4 border-2 border-gray-400">
+            <img src={card.url} className="w-full h-[180px] sm:h-[310px] rounded-t-lg brightness-80 hover:brightness-110 cursor-pointer "></img>
                <div className="flex-row text-gray-700 ">
                   <div className='inline-flex w-full py-3 px-5'>
                      <svg className="hover:rotate-180 duration-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -52,7 +53,7 @@ const Card = () => {
                      <span className="mx-4 text-lg md:text-2xl group-hover:translate-x-10 duration-300"> Buy your ticket!</span>               
                   </div>
                </div>
-            <img src={card.url} className="w-full h-[180px] sm:h-[310px] rounded-b-lg brightness-80 hover:brightness-110 cursor-pointer shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"></img>
+            
          </div>
          ))}   
       </div>

@@ -203,10 +203,10 @@ const isActive = (listNumber:number) => {
             </li>
       {/*Ddate*/}
             <div className='inline-flex'>
+              <span className='px-4 text-2xl'><input className='w-40' type="date" onChange={e=>setSelectedArrDate(e.target.value)}></input></span> 
               <svg className="h-10 w-10 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <span className='px-4 text-2xl'><input className='w-40' type="date" onChange={e=>setSelectedArrDate(e.target.value)}></input></span> 
+              </svg>            
             </div> 
       {/*Dtime*/}
             <li className='px-4 text-2xl list-none cursor-pointer relative z-30 mx-1 bg-blue-200 rounded-2xl'>
@@ -247,10 +247,10 @@ const isActive = (listNumber:number) => {
             </li>
       {/*Adate*/}
             <div className='inline-flex'>
-              <svg className="h-10 w-10 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <span className='px-4 text-2xl'><input className='w-40' type="date" onChange={e=>setSelectedDepDate(e.target.value)}></input></span>
+               <svg className="h-10 w-10 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-               <span className='px-4 text-2xl'><input className='w-40' type="date" onChange={e=>setSelectedDepDate(e.target.value)}></input></span>               
+              </svg>               
             </div>
       {/*Atime*/}
             <li className='px-4 text-2xl list-none cursor-pointer relative z-10 mx-1 bg-blue-200 rounded-2xl'>
@@ -274,15 +274,15 @@ const isActive = (listNumber:number) => {
         <div className='flex flex-wrap border-t-2 border-gray-300'>
           <div className='text-3xl pt-8 pb-2 w-full'>Summary:</div>
             <div className='flex-row text-xl'>
-              <span className='text-gray-500 text-2xl'>Room:</span>
+              <span className='text-blue-300 text-2xl'>Room:</span>
               <div>Room for: {rooms[selectedRoom].people} - Room code: {rooms[selectedRoom].id}</div>         
-              <div className='text-gray-500 text-2xl mt-2'>Flight:</div>
+              <div className='text-blue-300 text-2xl mt-2'>Flight:</div>
               <div>{rooms[selectedRoom].people}x ticket for WizzAir Airlines</div>
               <div>{selectedDeparture} - {selectedDepDate} - {selectedDepTime}</div>
               <div>{selectedArrival} - {selectedArrDate} - {selectedArrTime}</div>              
             </div>
             <div className='flex-row md:ml-12 mt-2 md:mt-0 text-xl'>
-               <div className='text-gray-500 text-2xl'>Price:</div>
+               <div className='text-blue-300 text-2xl'>Price:</div>
                <div>Room for {rooms[selectedRoom].people}: {rooms[selectedRoom].people * hotel.price}$ {}</div>
                <div>Flight tickets: {rooms[selectedRoom].people * 200}$</div>
                <div>Transfer: {rooms[selectedRoom].people * 25}$</div>
