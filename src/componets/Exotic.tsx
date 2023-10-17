@@ -22,8 +22,8 @@ const Exotic = () => {
             </div>
             </Link>
          </div>
-         </div>
-   <div className="w-5/6 max-w-[1280px] m-auto flex place-content-evenly flex-wrap flex-shrink 2xl:mt-10 ">
+   </div>
+   <div className="w-5/6 max-w-[1280px] m-auto flex place-content-evenly flex-wrap flex-shrink 2xl:mt-10 border-b-2 pb-10">
       <div className='h-56 md:h-80 2xl:h-56 w-full 2xl:w-[380px] my-4 '>
          <Link to={"/vite-deploy/Zanzibar"}>
          <div style={{backgroundImage: `url(https://andreveiculos.com.br/blog/wp-content/uploads/2018/11/zanzibar.jpg)`}}

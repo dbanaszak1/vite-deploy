@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom"
+
 interface Props{
    hotels:{price:string; url:string; name:string; stars:number; rate:number; ratecount:number;}[];
    country:string;
@@ -58,7 +60,9 @@ const Card1 = ({hotels, country}:Props) => {
             <span className="text-4xl text-gray-600 pr-2">{hotel.price}</span>
             <div className="text-sm w-12">$ per person</div>  
          </div>
-         <button className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mt-4 md:mt-8 2xl:mt-20 mb-4 rounded-lg hover:bg-gray-700 hover:text-blue-200 duration-300">Check offer</button>
+         <Link key={index} to={`../vite-deploy/Hotel/${hotel.name}`} state={{hotel: hotel}}>
+            <button className="border-2 border-gray-700 text-gray-700 text-2xl p-2 font-semibold mt-4 md:mt-8 2xl:mt-20 mb-4 rounded-lg hover:bg-gray-700 hover:text-blue-200 duration-300">Check offer</button>
+         </Link>
          <div className="text-sm inline-flex">Check dates and prices
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w6 h-6">
                <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"/>

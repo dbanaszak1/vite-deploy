@@ -24,9 +24,9 @@ const cards = [
    ];
 
 
-const Card = () => {
+const RecomendedDest = () => {
   return (
-    <div className='w-5/6 md:w-full max-w-[1280px] m-auto mt-12 mb-12'>
+    <div className='w-5/6 md:w-full max-w-[1280px] m-auto pt-12 mb-12  border-t-2 border-gray-200'>
       <div className="w-full m-auto">
          <h1 className="text-3xl md:text-4xl">Recomended travel destinations 2023</h1>
          <h2 className='text-lg text-gray-500'>Choose the place recomended by other turists!</h2>
@@ -52,8 +52,7 @@ const Card = () => {
                      </svg>
                      <span className="mx-4 text-lg md:text-2xl group-hover:translate-x-10 duration-300"> Buy your ticket!</span>               
                   </div>
-               </div>
-            
+               </div>          
          </div>
          ))}   
       </div>
@@ -61,4 +60,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default RecomendedDest;
