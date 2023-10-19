@@ -32,7 +32,7 @@ const slides = [
  },
  {
    text1: "LAST MINUTE",
-   text2:"Greece, Turkey, Spain, Cropatia and more",
+   text2:"Greece, Turkey, Spain, Croatia and more",
    text3:"Cheapest prices guaranteed",
    text4:"Many dates avilable",
    buttontext:"CHECK HERE",

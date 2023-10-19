@@ -40,7 +40,7 @@ const Cardsm = () => {
   return (      
    <section className="w-5/6 lg:w-full max-w-[1280px] m-auto pt-12 mb-8">
       <div className="w-full m-auto">
-         <h1 className="w-full text-3xl md:text-4xl py-5">Most popular directions this year!</h1>
+         <h1 className="w-full text-3xl md:text-4xl ">Most popular directions this year!</h1>
          <h3 className="text-lg text-gray-500 ">Find your pefect place for holidays!</h3>         
       </div>
       <div className="w-full m-auto flex flex-wrap place-content-evenly">
