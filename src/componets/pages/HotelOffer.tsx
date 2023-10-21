@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {useLocation, useSearchParams, Link} from "react-router-dom"
+import {useLocation} from "react-router-dom"
 import Slider2 from '../Slider2'
 import Footer from '../Footer'
 

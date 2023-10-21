@@ -9,6 +9,7 @@ import { useLocation } from 'react-router-dom';
 import LastMinutePage from "./componets/pages/LastMinutePage";
 import AboutPage from "./componets/pages/AboutPage";
 import HotelOffer from "./componets/pages/HotelOffer";
+import BlogPage from "./componets/pages/BlogPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/vite-deploy/:countryName" Component={Countrypage}/>
         <Route path="/vite-deploy/LastMinute" Component={LastMinutePage}/>
         <Route path="/vite-deploy/Hotel/:name" Component={HotelOffer}/>
+        <Route path="/vite-deploy/travel/:title" Component={BlogPage}/>
       </Routes>
     </Router>
 

@@ -4,7 +4,7 @@ import Footer from '../Footer';
 
 const travelBlogDB = [
   {
-    bgimage:"https://c02.purpledshub.com/uploads/sites/62/2023/06/GettyImages-1198496599-5d4ef35.jpg?w=1029&webp=1",
+    bgimage:"https://blizejswiata.airtoursclub.pl/wp-content/uploads/2022/07/xavier-coiffic-ByAHlRiTQjo-unsplash-scaled.jpg",
     mark:"Exotic Island",
     place:"Maurituis",
     title:"Mauritius",
