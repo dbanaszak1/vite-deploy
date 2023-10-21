@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import Hotels from "../Hotels";
 import Exotic from "../Exotic";
 import LastMinuteBanner from '../LastMinuteBanner';
-import RecomendedDest from '../RecomendedDest';
+import RecommendedDest from '../RecommendedDest';
 
 const Home = () => {
    const bgurl="https://wallpaperset.com/w/full/7/a/b/70196.jpg";
@@ -16,7 +16,7 @@ const Home = () => {
    <div style={{backgroundImage: `url(${bgurl})`}} className="w-full h-full bg-no-repeat">
    <Cardsm/>
    <LastMinuteBanner/>
-   <RecomendedDest/>
+   <RecommendedDest/>
    <Hotels/>  
    <Exotic/>
    <Slider/>

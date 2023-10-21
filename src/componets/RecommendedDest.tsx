@@ -24,7 +24,7 @@ const cards = [
    ];
 
 
-const RecomendedDest = () => {
+const RecommendedDest = () => {
   return (
     <div className='w-5/6 md:w-full max-w-[1280px] m-auto pt-12 mb-12  border-t-2 border-gray-200'>
       <div className="w-full m-auto">
@@ -60,4 +60,4 @@ const RecomendedDest = () => {
   );
 };
 
-export default RecomendedDest;
+export default RecommendedDest;
