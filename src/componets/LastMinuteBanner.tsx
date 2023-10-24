@@ -5,8 +5,8 @@ const LastMinuteBanner = () => {
   const url="https://www.smartertravel.com/wp-content/uploads/2023/07/The-7-Best-Travel-Dresses-for-Europe-header-image-1400x400.png"
   return (
     <div className="w-full my-6 mt-20 ">
-      <div style={{backgroundImage: `url(${url})`}} className="w-full bg-cover h-56 overflow-hidden bg-center md:bg-top">
-        <div className="text-3xl w-full text-center text-gray-700">
+      <div style={{backgroundImage: `url(${url})`}} className="w-full bg-cover h-72 overflow-hidden bg-center md:bg-top">
+        <div className="text-3xl w-full text-center text-white font-semibold">
           <h3 className="py-4">Check out our Last Minute offers!</h3>
         </div> 
       </div>
