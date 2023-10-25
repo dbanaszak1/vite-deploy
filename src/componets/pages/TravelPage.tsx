@@ -84,7 +84,7 @@ const TravelPage = () => {
     <>
       <div className='mt-20 text-center w-full'>
         <h1 className='text-5xl font-serif  '>Travel stories, inspirations and more</h1>
-        <h2 className='text-xl text-gray-700'>Inspire yourself with others expiriance!</h2>
+        <h2 className='text-xl text-gray-700'>Inspire yourself with others experience!</h2>
       </div>
       <div className='max-w-[1280px] m-auto'>
         <CardTravelPage travelBlog={travelBlogDB}/>
