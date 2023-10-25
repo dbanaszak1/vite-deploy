@@ -21,10 +21,10 @@ interface Props{
 const CardTravelPage = ({travelBlog}: Props) => {
 
   return (
-    <div className='lg:grid lg:grid-cols-3 relative'>
+    <div className='lg:grid lg:grid-cols-3'>
         {travelBlog.map((blog,index)=>(
         <div key={index} className={ index%4 === 0 ? "w-[400px] flex-row m-auto lg:row-span-2 mt-10 border-[1px] border-gray-700 rounded-md" : "w-[400px] lg:w-auto flex-row lg:inline-flex m-auto lg:col-span-2 mt-10 border-[1px] border-gray-700 rounded-md"}>
-            <div className={ index%4 === 0 ?'w-[400px] h-80 bg-cover rounded-t-md relative': "w-[415px] h-[300px] bg-cover rounded-l-md relative"} style={{backgroundImage: `url(${blog.bgimage})`}}>
+            <div className={ index%4 === 0 ?'w-[398px] lg:w-[400px] h-80 bg-cover rounded-t-md relative': "w-[398px] lg:w-[415px] h-[300px] bg-cover rounded-t-md lg:rounded-l-md relative"} style={{backgroundImage: `url(${blog.bgimage})`}}>
                 <div className='absolute top-[5%] left-[5%] bg-blue-500 font-bold text-md p-1 text-white'>{blog.mark}</div>
                 <div className='inline-flex absolute bottom-[5%] left-[5%] text-white text-2xl font-semibold'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
