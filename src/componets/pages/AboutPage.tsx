@@ -8,7 +8,7 @@ const AboutPage = () => {
       <div className='w-5/6 lg:w-2/3 m-auto justify-center'>
         <div className='w-full text-center text-4xl py-10 font-semibold text-gray-200'>
             <span>About the website</span>     
-            <div className="justify-center m-auto w-40 my-4"><img src="public/images/logo-no-background.png" className="rounded-full mx-2"></img></div>         
+            <div className="justify-center m-auto w-40 my-4"><img src="./public/images/logo-no-background.png" className="rounded-full mx-2"></img></div>         
             <div className='text-xl lg:w-2/3 m-auto text-white'>            
               <span>I regret to inform you that this website is not associated with a legitimate company, and it does not offer any products or services for purchase :)</span>
             </div>
