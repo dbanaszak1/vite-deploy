@@ -24,12 +24,15 @@ const {blog} = location.state
             </svg>
             <span>{blog.place}</span>
          </div>
-         <div>
-            <div className='text-lg pt-4'>{blog.introduction}</div>
-            <div className='text-lg pt-4'>{blog.p1}</div>
-            <div className='text-lg pt-4'>{blog.p2}</div>
-            <div className='text-lg pt-4'>{blog.p3}</div>
-            <div className='text-lg pt-4'>{blog.end}</div>
+         <div className='md:px-10'>
+            <div className='text-lg pt-2'>{blog.introduction}</div>
+            <h3 className='text-2xl pt-4'>Nature in {blog.title}</h3>
+            <div className='text-lg pt-2'>{blog.p1}</div>
+            <div className='text-lg pt-2'>{blog.p2}</div>
+            <h3 className='text-2xl pt-4'>Culinary expirience</h3>
+            <div className='text-lg pt-2'>{blog.p3}</div>
+            <h3 className='text-2xl pt-4'>In summary</h3>
+            <div className='text-lg pt-2'>{blog.end}</div>
          </div>
       </div>
      <Footer/>
