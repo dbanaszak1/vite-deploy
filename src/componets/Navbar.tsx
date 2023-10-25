@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-4 inline-flex w-full h-20">
     <div className="text-gray-700 text-xl w-1/2 text-center items-center inline-flex">
         <div className="m-auto h-full inline-flex items-center">
-            <img src="/public/images/logo-black.png" className="h-full rounded-full mx-2"></img>
+            <div style={{backgroundImage: `url(https://github.com/dbanaszak1/vite-deploy/blob/main/public/images/logo-black.png?raw=true)`}} className="h-[52px] rounded-full mx-2 w-[52px] bg-cover"></div>
             <span>SkyTravel</span>
         </div>
     </div>
