@@ -21,7 +21,7 @@ interface Props{
 const CardTravelPage = ({travelBlog}: Props) => {
 
   return (
-    <div className='lg:grid lg:grid-cols-3'>
+    <div className='xl:grid xl:grid-cols-3 scale-90 -translate-y-48 lg:translate-y-0 lg:scale-100'>
         {travelBlog.map((blog,index)=>(
         <div key={index} className={ index%4 === 0 ? "w-[400px] flex-row m-auto lg:row-span-2 mt-10 border-[1px] border-gray-700 rounded-md" : "w-[400px] lg:w-auto flex-row lg:inline-flex m-auto lg:col-span-2 mt-10 border-[1px] border-gray-700 rounded-md"}>
             <div className={ index%4 === 0 ?'w-[398px] lg:w-[400px] h-80 bg-cover rounded-t-md relative': "w-[398px] lg:w-[415px] h-[300px] bg-cover rounded-t-md lg:rounded-l-md relative"} style={{backgroundImage: `url(${blog.bgimage})`}}>

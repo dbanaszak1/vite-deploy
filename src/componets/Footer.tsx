@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className=" mt-10">
+    <footer className=" my-10 border-t-2">
       <div className="w-full text-center text-3xl p-5 ">SkyTravel</div>
       <div className='w-full inline-flex justify-center'>
          <svg className="h-12 w-12 p-2 text-black border-[1px] border-black rounded-full mx-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
@@ -33,9 +33,6 @@ const Footer = () => {
                <li>Regulations</li>
             </ul>
          </div>
-      </div>
-      <div className="w-full text-sm bg-gray-400 mt-8 text-center p-2">
-         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam distinctio, enim dolorum fuga quis. Sed fuga temporibus dolorum hic, perspiciatis laboriosam quia a iusto reiciendis quos adipisci quibusdam asperiores.
       </div>
     </footer>
   )
